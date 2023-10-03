@@ -6,6 +6,8 @@ import Messages from "./pages/Messages";
 import Profile from "./pages/Profile";
 import Settings from "./pages/Settings";
 import NoPage from "./pages/NoPage";
+import Login from "./pages/Login";
+import SignUp from "./pages/SignUp";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
             <Route path="messages" element={<Messages />} />
             <Route path="profile" element={<Profile />} />
             <Route path="settings" element={<Settings />} />
+            <Route path="login" element={<Login />} />
+            <Route path="signup" element={<SignUp />} />
             <Route path="*" element={<NoPage />} />
           </Route>
         </Routes>
